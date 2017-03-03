@@ -86,9 +86,9 @@ To get only the Result about a specific Execution of a Code, you only need the e
 api.getResultFromExecution("idExecution")
 ```
 
-#### Running [QASM 2.0](https://github.com/IBMQuantum/QASM)
+#### Running [QASM 2.0](https://github.com/IBM/qiskit-openqasm)
 
-To execute a [QASM 2.0](https://github.com/IBMQuantum/QASM) experiment:
+To execute a [QASM 2.0](https://github.com/IBM/qiskit-openqasm) experiment:
 
 ```python
 api.runExperiment(qasm, device, shots, name=None, timeout=60)
@@ -105,9 +105,9 @@ api.runExperiment(qasm, device, shots, name=None, timeout=60)
 - **timeout**: Time to wait for the result. The maximum timeout is 300. If the timeout is reached, you obtain the executionId to get the result with the getResultFromExecution method in the future. Eg:
 ```timeout = 120``
 
-#### Running Jobs [QASM 2.0](https://github.com/IBMQuantum/QASM)
+#### Running Jobs [QASM 2.0](https://github.com/IBM/qiskit-openqasm)
 
-To execute jobs about [QASM 2.0](https://github.com/IBMQuantum/QASM) experiments:
+To execute jobs about [QASM 2.0](https://github.com/IBM/qiskit-openqasm) experiments:
 
 ```python
 api.runJobs(qasms, device, shots, maxCredits)
@@ -241,4 +241,4 @@ SOFTWARE.
 
 [IBM Quantun Experience Community](https://quantumexperience.ng.bluemix.net/qstage/#/community)
 
-[OPENQASM](https://github.com/IBMQuantum/QASM)
+[OPENQASM](https://github.com/IBM/qiskit-openqasm)
