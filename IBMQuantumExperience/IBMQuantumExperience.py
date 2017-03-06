@@ -167,6 +167,7 @@ class IBMQuantumExperience():
         data = {}
         for qasm in qasms:
             qasm['qasm'] = qasm['qasm'].replace('IBMQASM 2.0;', '')
+            qasm['qasm'] = qasm['qasm'].replace('OPENQASM 2.0;', '')
         data['qasms'] = qasms
         data['shots'] = shots
         data['maxCredits'] = maxCredits
